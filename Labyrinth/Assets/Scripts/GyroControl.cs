@@ -3,7 +3,7 @@ using UnityEngine;
 public class GyroControl : MonoBehaviour
 {
     
-    public float maxTilt = 20;
+    public float maxTilt = 15;
     public float smoothness = 5;
 
     private Quaternion targetRotation;

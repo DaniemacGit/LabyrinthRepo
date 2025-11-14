@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4c257a31acb974adfbf35d9670a966de
+timeCreated: 1479667683
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79487
+  packageName: Zig Zag 2D
+  packageVersion: 1.0
+  assetPath: Assets/ZigZag2D/AssetFiles/Materials/BackgroundMaterial.mat
+  uploadId: 153678

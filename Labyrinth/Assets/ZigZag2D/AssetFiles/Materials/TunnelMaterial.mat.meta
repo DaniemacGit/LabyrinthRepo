@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 72a662b71dba142c596a3f4c7f095fb4
+timeCreated: 1470529333
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79487
+  packageName: Zig Zag 2D
+  packageVersion: 1.0
+  assetPath: Assets/ZigZag2D/AssetFiles/Materials/TunnelMaterial.mat
+  uploadId: 153678

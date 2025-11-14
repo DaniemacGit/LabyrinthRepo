@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6a2f3a5cf00034986b35a4c448718cb9
+timeCreated: 1480021614
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79487
+  packageName: Zig Zag 2D
+  packageVersion: 1.0
+  assetPath: Assets/ZigZag2D/AssetFiles/Prefabs/Game/Player_CircleGreen.prefab
+  uploadId: 153678

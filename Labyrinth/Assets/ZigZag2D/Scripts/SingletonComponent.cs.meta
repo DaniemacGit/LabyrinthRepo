@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 34b210c880eb84350b0f052177182a7f
+timeCreated: 1480001781
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79487
+  packageName: Zig Zag 2D
+  packageVersion: 1.0
+  assetPath: Assets/ZigZag2D/Scripts/SingletonComponent.cs
+  uploadId: 153678

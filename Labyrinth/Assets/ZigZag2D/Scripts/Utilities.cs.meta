@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: d27c6cb9a811e4eeaa87b9cef56b2563
+timeCreated: 1480001029
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79487
+  packageName: Zig Zag 2D
+  packageVersion: 1.0
+  assetPath: Assets/ZigZag2D/Scripts/Utilities.cs
+  uploadId: 153678

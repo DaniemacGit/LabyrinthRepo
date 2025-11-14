@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: b0aad8e8499a942eeb0dc27c24a556ff
+timeCreated: 1480001741
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79487
+  packageName: Zig Zag 2D
+  packageVersion: 1.0
+  assetPath: Assets/ZigZag2D/Scripts/GameUI.cs
+  uploadId: 153678

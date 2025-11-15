@@ -17,6 +17,8 @@ public class GyroControl : MonoBehaviour
 
     private Quaternion targetRotation;
 
+    Rigidbody rb;
+
     private void Start()
     {
         // fill ball physics values with the values from the inspector
@@ -26,9 +28,11 @@ public class GyroControl : MonoBehaviour
         ballPhysicsMaterial.dynamicFriction = ballFriction;
         ballPhysicsMaterial.staticFriction = ballFriction;
         Physics.gravity = new Vector3(0, gravity, 0);
+
+        rb = GetComponent<Rigidbody>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         // Get accelerometer input
         Vector3 tilt = Input.acceleration;
@@ -47,7 +51,7 @@ public class GyroControl : MonoBehaviour
         targetRotation = Quaternion.Euler(angleX, 0f, angleZ);
 
         // Smoothly rotate the board
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * tiltingSmoothness);
+        rb.MoveRotation(Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * tiltingSmoothness));
     }
 
     void OnGUI()

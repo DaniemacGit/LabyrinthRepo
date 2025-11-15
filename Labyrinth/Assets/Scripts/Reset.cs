@@ -18,7 +18,9 @@ public class Reset : MonoBehaviour
     {
         if (collision.gameObject.layer == 6)
         {
-            gameObject.transform.position = new Vector3(0, 2, 0);
+            transform.position = new Vector3(0, 2, 0);
+            GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
+            GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
         }
     }
 }

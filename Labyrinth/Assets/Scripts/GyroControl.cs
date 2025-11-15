@@ -1,12 +1,32 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GyroControl : MonoBehaviour
 {
+    Rigidbody ballRigidbody;
+    [Header("Ball physics settings")]
+    public float ballDrag;
+    public float ballAngularDrag;
+    public PhysicsMaterial ballPhysicsMaterial;
+    public float ballFriction;
+    public float gravity;
     
-    public float maxTilt = 15;
-    public float smoothness = 5;
+    float maxTiltAngle = 10;
+    float tiltingSmoothness = 2;
+    float tiltSens = 50;
 
     private Quaternion targetRotation;
+
+    private void Start()
+    {
+        // fill ball physics values with the values from the inspector
+        ballRigidbody = GameObject.Find("Ball").GetComponent<Rigidbody>();
+        ballRigidbody.linearDamping = ballDrag;
+        ballRigidbody.angularDamping = ballAngularDrag;
+        ballPhysicsMaterial.dynamicFriction = ballFriction;
+        ballPhysicsMaterial.staticFriction = ballFriction;
+        Physics.gravity = new Vector3(0, gravity, 0);
+    }
 
     void Update()
     {
@@ -20,13 +40,22 @@ public class GyroControl : MonoBehaviour
         float tiltZ = tilt.y; // Forward-backward tilt
 
         // Map tilt to rotation angles
-        float angleX = Mathf.Clamp(tiltZ * maxTilt, -maxTilt, maxTilt); // forward/back tilt
-        float angleZ = Mathf.Clamp(tiltX * maxTilt, -maxTilt, maxTilt); // left/right tilt
+        float angleX = Mathf.Clamp(tiltZ * tiltSens, -maxTiltAngle, maxTiltAngle); // forward/back tilt
+        float angleZ = Mathf.Clamp(tiltX * tiltSens, -maxTiltAngle, maxTiltAngle); // left/right tilt
 
         // Create target rotation
         targetRotation = Quaternion.Euler(angleX, 0f, angleZ);
 
         // Smoothly rotate the board
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * smoothness);
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * tiltingSmoothness);
+    }
+
+    void OnGUI()
+    {
+        GUI.skin.label.fontSize = 32;
+
+        GUI.Label(new Rect(10, 100, 4000, 400), " " + transform.rotation.eulerAngles.x);
+        GUI.Label(new Rect(10, 200, 4000, 400), " " + transform.rotation.eulerAngles.z);
+        GUI.Label(new Rect(10, 300, 4000, 400), " " + GameObject.Find("Ball").GetComponent<Rigidbody>().linearVelocity);
     }
 }

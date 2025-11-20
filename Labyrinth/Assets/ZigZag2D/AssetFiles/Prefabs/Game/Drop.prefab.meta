@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d6f2e48dac4954d45a71e21118ff685f
+timeCreated: 1480455483
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79487
+  packageName: Zig Zag 2D
+  packageVersion: 1.0
+  assetPath: Assets/ZigZag2D/AssetFiles/Prefabs/Game/Drop.prefab
+  uploadId: 153678

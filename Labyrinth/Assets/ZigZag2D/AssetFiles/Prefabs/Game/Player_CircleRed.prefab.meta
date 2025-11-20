@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b1a85f3374c754f0ca4a2a3506639de3
+timeCreated: 1480021589
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79487
+  packageName: Zig Zag 2D
+  packageVersion: 1.0
+  assetPath: Assets/ZigZag2D/AssetFiles/Prefabs/Game/Player_CircleRed.prefab
+  uploadId: 153678

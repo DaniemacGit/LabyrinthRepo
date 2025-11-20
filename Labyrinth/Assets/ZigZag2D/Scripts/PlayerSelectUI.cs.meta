@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 073668de72ef1476cb55e35dee9de6b0
+timeCreated: 1481663819
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79487
+  packageName: Zig Zag 2D
+  packageVersion: 1.0
+  assetPath: Assets/ZigZag2D/Scripts/PlayerSelectUI.cs
+  uploadId: 153678

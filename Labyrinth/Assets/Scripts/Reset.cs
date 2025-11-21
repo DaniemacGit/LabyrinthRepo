@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Reset : MonoBehaviour
 {
@@ -21,6 +22,11 @@ public class Reset : MonoBehaviour
             transform.position = new Vector3(0, 2, 0);
             GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
             GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+        }
+
+        if (collision.gameObject.layer == 7)
+        {
+            SceneManager.LoadScene(0);
         }
     }
 }

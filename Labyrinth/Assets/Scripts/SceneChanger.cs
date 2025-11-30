@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Manages all scene changes
 public class SceneChanger : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -15,6 +16,12 @@ public class SceneChanger : MonoBehaviour
 
     }
 
+    public void loadMenuPage()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+
     public void loadLevelsPage()
     {
         SceneManager.LoadScene(1);
@@ -25,9 +32,14 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene(2);
     }
 
-    public void loadExitPage()
+    public void loadSettingsPage()
     {
         SceneManager.LoadScene(3);
+    }
+
+    public void loadExitPage()
+    {
+        SceneManager.LoadScene(4);
     }
 
     public void Exit()

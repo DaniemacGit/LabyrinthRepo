@@ -3521,11 +3521,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94a33bec6ee1f2547bbf8bb13e4e96c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballDrag: 0.35
+  ballDrag: 2
   ballAngularDrag: 0.05
   ballPhysicsMaterial: {fileID: 13400000, guid: 56518a04f8fb3574baec6daedbde2780, type: 2}
   ballFriction: 0
-  gravity: -29.43
+  gravity: -117.72
 --- !u!54 &327322859
 Rigidbody:
   m_ObjectHideFlags: 0

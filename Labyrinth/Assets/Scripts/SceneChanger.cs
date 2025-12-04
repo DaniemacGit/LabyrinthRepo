@@ -4,42 +4,42 @@ using UnityEngine.SceneManagement;
 // Manages all scene changes
 public class SceneChanger : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void loadMenuPage()
     {
         SceneManager.LoadScene(0);
     }
-
-
-    public void loadLevelsPage()
+    public void loadSettingsPage()
     {
         SceneManager.LoadScene(1);
     }
 
-    public void loadLevelOne()
+    public void loadLevelsPage()
     {
         SceneManager.LoadScene(2);
     }
 
-    public void loadSettingsPage()
+    public void loadLevelOne()
     {
         SceneManager.LoadScene(3);
     }
 
-    public void loadExitPage()
+    public void loadLevelTwo()
     {
         SceneManager.LoadScene(4);
+    }
+
+    public void loadLevelThree()
+    {
+        SceneManager.LoadScene(5);
+    }
+
+    public void loadLevelFour()
+    {
+        SceneManager.LoadScene(6);
+    }
+    public void loadLevelFive()
+    {
+        SceneManager.LoadScene(7);
     }
 
     public void LoadLevel1CompletePage()
@@ -62,10 +62,5 @@ public class SceneChanger : MonoBehaviour
         PlayerPrefs.Save();
 
         SceneManager.LoadScene("complete_page");
-    }
-
-    public void Exit()
-    {
-        Application.Quit();
     }
 }

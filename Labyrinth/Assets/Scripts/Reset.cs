@@ -11,14 +11,9 @@ public class Reset : MonoBehaviour
         startPos = transform.position;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     private void OnCollisionEnter(Collision collision)
     {
+        // reset board and ball on fall
         if (collision.gameObject.layer == 6)
         {
             transform.position = startPos;
@@ -27,9 +22,10 @@ public class Reset : MonoBehaviour
             GameObject.Find("Grid").GetComponent<Rigidbody>().MoveRotation(Quaternion.Euler(new Vector3(0, 0, 0)));
         }
 
+        // move back to levels screen after level completion
         if (collision.gameObject.layer == 7)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(2);
         }
     }
 }

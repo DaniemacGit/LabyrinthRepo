@@ -42,6 +42,28 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene(4);
     }
 
+    public void LoadLevel1CompletePage()
+    {
+        PlayerPrefs.SetString("SelectedLevel", "Level1");
+        PlayerPrefs.Save();
+        SceneManager.LoadScene("complete_page");
+    }
+
+    public void LoadLevel2CompletePage()
+    {
+        PlayerPrefs.SetString("SelectedLevel", "Level2");
+        PlayerPrefs.Save();
+        SceneManager.LoadScene("complete_page");
+    }
+
+    public void LoadCompletePageForLevel(string levelSceneName)
+    {
+        PlayerPrefs.SetString("SelectedLevel", levelSceneName);
+        PlayerPrefs.Save();
+
+        SceneManager.LoadScene("complete_page");
+    }
+
     public void Exit()
     {
         Application.Quit();

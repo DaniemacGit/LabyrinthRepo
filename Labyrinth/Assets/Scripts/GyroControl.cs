@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class GyroControl : MonoBehaviour
 {
+    // ball physics values
     Rigidbody ballRigidbody;
     [Header("Ball physics settings")]
     public float ballDrag;
@@ -11,12 +12,13 @@ public class GyroControl : MonoBehaviour
     public float ballFriction;
     public float gravity;
     
+    // board tilt values
     float maxTiltAngle = 10;
     float tiltingSmoothness = 2;
     float tiltSens = 50;
 
+    // rotation calculation variables
     private Quaternion targetRotation;
-
     Rigidbody rb;
 
     private void Start()
@@ -34,32 +36,17 @@ public class GyroControl : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Get accelerometer input
+        // accelerometer input
         Vector3 tilt = Input.acceleration;
-
-        // --- Orientation Mapping ---
-        // Assuming landscape mode with screen facing up
-        // and home button (or camera notch) on the RIGHT.
         float tiltX = -tilt.x; // Left-right tilt
         float tiltZ = tilt.y; // Forward-backward tilt
 
-        // Map tilt to rotation angles
+        // map phone tilt to board rotation
         float angleX = Mathf.Clamp(tiltZ * tiltSens, -maxTiltAngle, maxTiltAngle); // forward/back tilt
         float angleZ = Mathf.Clamp(tiltX * tiltSens, -maxTiltAngle, maxTiltAngle); // left/right tilt
 
-        // Create target rotation
+        // create variable for desired rotation and rotate
         targetRotation = Quaternion.Euler(angleX, 0f, angleZ);
-
-        // Smoothly rotate the board
         rb.MoveRotation(Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * tiltingSmoothness));
-    }
-
-    void OnGUI()
-    {
-        GUI.skin.label.fontSize = 32;
-
-        GUI.Label(new Rect(10, 100, 4000, 400), " " + transform.rotation.eulerAngles.x);
-        GUI.Label(new Rect(10, 200, 4000, 400), " " + transform.rotation.eulerAngles.z);
-        GUI.Label(new Rect(10, 300, 4000, 400), " " + GameObject.Find("Ball").GetComponent<Rigidbody>().linearVelocity);
     }
 }

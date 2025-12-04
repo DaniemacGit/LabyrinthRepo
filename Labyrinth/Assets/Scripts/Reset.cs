@@ -3,10 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class Reset : MonoBehaviour
 {
+    Vector3 startPos;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        startPos = transform.position;
     }
 
     // Update is called once per frame
@@ -19,9 +21,10 @@ public class Reset : MonoBehaviour
     {
         if (collision.gameObject.layer == 6)
         {
-            transform.position = new Vector3(0, 2, 0);
+            transform.position = startPos;
             GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
             GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+            GameObject.Find("Grid").GetComponent<Rigidbody>().MoveRotation(Quaternion.Euler(new Vector3(0, 0, 0)));
         }
 
         if (collision.gameObject.layer == 7)

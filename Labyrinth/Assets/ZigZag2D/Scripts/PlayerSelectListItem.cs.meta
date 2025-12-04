@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 208feefdb47614c46a35d5a1d5106df8
+timeCreated: 1481663869
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79487
+  packageName: Zig Zag 2D
+  packageVersion: 1.0
+  assetPath: Assets/ZigZag2D/Scripts/PlayerSelectListItem.cs
+  uploadId: 153678

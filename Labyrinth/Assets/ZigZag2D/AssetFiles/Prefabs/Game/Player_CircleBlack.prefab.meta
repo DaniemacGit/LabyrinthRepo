@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a956f4a3a74864fa4af5ea4c88ab3861
+timeCreated: 1480010590
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79487
+  packageName: Zig Zag 2D
+  packageVersion: 1.0
+  assetPath: Assets/ZigZag2D/AssetFiles/Prefabs/Game/Player_CircleBlack.prefab
+  uploadId: 153678

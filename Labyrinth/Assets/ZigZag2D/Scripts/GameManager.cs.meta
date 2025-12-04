@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: def632d9a3abd4dadb8d70fba4d18e5a
+timeCreated: 1470618420
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79487
+  packageName: Zig Zag 2D
+  packageVersion: 1.0
+  assetPath: Assets/ZigZag2D/Scripts/GameManager.cs
+  uploadId: 153678

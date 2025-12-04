@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: aebc858f6368c4821938b6df71b1c498
+timeCreated: 1483114308
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79487
+  packageName: Zig Zag 2D
+  packageVersion: 1.0
+  assetPath: Assets/ZigZag2D/Documentation/ZigZag2D_Documentation.pdf
+  uploadId: 153678

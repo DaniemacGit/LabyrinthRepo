@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6a68b0438083d4497b07431bdf1e1a7b
+timeCreated: 1481945932
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79487
+  packageName: Zig Zag 2D
+  packageVersion: 1.0
+  assetPath: Assets/ZigZag2D/AssetFiles/Prefabs/Game/Player_CircleTarget.prefab
+  uploadId: 153678

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 53bbb64caa9d74f1b9e82d5fe75b7c29
+timeCreated: 1481663364
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79487
+  packageName: Zig Zag 2D
+  packageVersion: 1.0
+  assetPath: Assets/ZigZag2D/AssetFiles/Prefabs/UI/PlayerSelectListItem.prefab
+  uploadId: 153678

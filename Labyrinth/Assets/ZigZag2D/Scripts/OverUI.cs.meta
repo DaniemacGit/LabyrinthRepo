@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 2dbdc5868cd6c43c8ab5e5a4fca798d8
+timeCreated: 1480003335
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79487
+  packageName: Zig Zag 2D
+  packageVersion: 1.0
+  assetPath: Assets/ZigZag2D/Scripts/OverUI.cs
+  uploadId: 153678

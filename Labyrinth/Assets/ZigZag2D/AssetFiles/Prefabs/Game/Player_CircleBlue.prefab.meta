@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fc8156b5f8a93478fad19434a9cc0447
+timeCreated: 1480021526
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79487
+  packageName: Zig Zag 2D
+  packageVersion: 1.0
+  assetPath: Assets/ZigZag2D/AssetFiles/Prefabs/Game/Player_CircleBlue.prefab
+  uploadId: 153678

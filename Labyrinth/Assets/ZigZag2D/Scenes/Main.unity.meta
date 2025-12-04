@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 528340017e4dc449a8683fcd7ceb6531
+timeCreated: 1470661892
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79487
+  packageName: Zig Zag 2D
+  packageVersion: 1.0
+  assetPath: Assets/ZigZag2D/Scenes/Main.unity
+  uploadId: 153678

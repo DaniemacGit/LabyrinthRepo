@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 1a4d62b0d71544583b7ec63ffca8708e
+timeCreated: 1480454373
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79487
+  packageName: Zig Zag 2D
+  packageVersion: 1.0
+  assetPath: Assets/ZigZag2D/Scripts/Drop.cs
+  uploadId: 153678

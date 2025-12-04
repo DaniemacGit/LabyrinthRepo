@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c0518bdeceb7d4ff8981b49c2f41a1f3
+timeCreated: 1481945966
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 79487
+  packageName: Zig Zag 2D
+  packageVersion: 1.0
+  assetPath: Assets/ZigZag2D/AssetFiles/Prefabs/Game/Player_CircleStar.prefab
+  uploadId: 153678

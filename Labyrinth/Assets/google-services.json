@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "460805267180",
+    "project_id": "labyrinth-1f99d",
+    "storage_bucket": "labyrinth-1f99d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460805267180:android:d9313575de6cb09aff4fc9",
+        "android_client_info": {
+          "package_name": "com.UnityTechnologies.com.unity.template.urpblank"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEcIvOHI3ca3dQz-gStIPQIFg0nICZ5xo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -8,6 +8,7 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
     public void loadSettingsPage()
     {
         SceneManager.LoadScene(1);
@@ -37,12 +38,13 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene(6);
     }
+
     public void loadLevelFive()
     {
         SceneManager.LoadScene(7);
     }
 
-    public void LoadLevel1CompletePage()
+    public void LoadLevelOneCompletePage()
     {
         PlayerPrefs.SetString("SelectedLevel", "Level1");
         PlayerPrefs.Save();

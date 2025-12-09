@@ -1,9 +1,18 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 // Manages all scene changes
 public class SceneChanger : MonoBehaviour
 {
+    public static float sens = 0;
+
+    private void Start()
+    {
+        GameObject.Find("Sensitivity Slider").GetComponent<Slider>().value = sens;
+    }
+
     public void loadMenuPage()
     {
         SceneManager.LoadScene(0);
@@ -43,26 +52,9 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene(7);
     }
-
-    public void LoadLevelOneCompletePage()
+    
+    public void sensChanger(float val)
     {
-        PlayerPrefs.SetString("SelectedLevel", "Level1");
-        PlayerPrefs.Save();
-        SceneManager.LoadScene("complete_page");
-    }
-
-    public void LoadLevel2CompletePage()
-    {
-        PlayerPrefs.SetString("SelectedLevel", "Level2");
-        PlayerPrefs.Save();
-        SceneManager.LoadScene("complete_page");
-    }
-
-    public void LoadCompletePageForLevel(string levelSceneName)
-    {
-        PlayerPrefs.SetString("SelectedLevel", levelSceneName);
-        PlayerPrefs.Save();
-
-        SceneManager.LoadScene("complete_page");
+        sens = val;
     }
 }

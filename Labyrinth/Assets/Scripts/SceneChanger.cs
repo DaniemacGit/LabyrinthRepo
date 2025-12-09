@@ -7,10 +7,15 @@ using UnityEngine.UI;
 public class SceneChanger : MonoBehaviour
 {
     public static float sens = 0;
+    public static float volume = 0.5f;
 
     private void Start()
     {
-        GameObject.Find("Sensitivity Slider").GetComponent<Slider>().value = sens;
+        if (SceneManager.GetActiveScene().name == "Settings")
+        {
+            GameObject.Find("Sensitivity Slider").GetComponent<Slider>().value = sens;
+            GameObject.Find("Sound Slider").GetComponent<Slider>().value = volume;
+        }
     }
 
     public void loadMenuPage()
@@ -56,5 +61,11 @@ public class SceneChanger : MonoBehaviour
     public void sensChanger(float val)
     {
         sens = val;
+    }
+
+    public void volumeChanger(float val)
+    {
+        volume = val;
+        GameObject.Find("Sound").GetComponent<AudioSource>().volume = volume;
     }
 }

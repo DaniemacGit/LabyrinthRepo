@@ -15,7 +15,7 @@ public class GyroControl : MonoBehaviour
     // board tilt values
     float maxTiltAngle = 10;
     float tiltingSmoothness = 2;
-    float tiltSens = 50 + (20 * SceneChanger.sens);
+    float tiltSens = 50 + (30 * SceneChanger.sens);
 
     // rotation calculation variables
     private Quaternion targetRotation;

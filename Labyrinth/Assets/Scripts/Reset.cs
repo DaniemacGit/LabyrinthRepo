@@ -25,6 +25,22 @@ public class Reset : MonoBehaviour
         // move back to levels screen after level completion
         if (collision.gameObject.layer == 7)
         {
+            if(SceneManager.GetActiveScene().name == "Level1")
+            {
+                LevelCompletion.level = 2;
+            }
+            if (SceneManager.GetActiveScene().name == "Level2")
+            {
+                LevelCompletion.level = 3;
+            }
+            if (SceneManager.GetActiveScene().name == "Level3")
+            {
+                LevelCompletion.level = 4;
+            }
+            if (SceneManager.GetActiveScene().name == "Level4")
+            {
+                LevelCompletion.level = 5;
+            }
             SceneManager.LoadScene(2);
         }
     }

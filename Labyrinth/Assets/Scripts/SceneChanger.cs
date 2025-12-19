@@ -18,6 +18,19 @@ public class SceneChanger : MonoBehaviour
         }
     }
 
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+    static void InitializeSettings()
+    {
+        if (PlayerPrefs.HasKey("Volume"))
+        {
+            volume = PlayerPrefs.GetFloat("Volume");
+        }
+        if (PlayerPrefs.HasKey("Sensitivity"))
+        {
+            sens = PlayerPrefs.GetFloat("Sensitivity");
+        }
+    }
+
     public void loadMenuPage()
     {
         SceneManager.LoadScene(0);
@@ -61,11 +74,15 @@ public class SceneChanger : MonoBehaviour
     public void sensChanger(float val)
     {
         sens = val;
+        PlayerPrefs.SetFloat("Sensitivity", sens);
+        PlayerPrefs.Save();
     }
 
     public void volumeChanger(float val)
     {
         volume = val;
         GameObject.Find("Sound").GetComponent<AudioSource>().volume = volume;
+        PlayerPrefs.SetFloat("Volume", volume);
+        PlayerPrefs.Save();
     }
 }
